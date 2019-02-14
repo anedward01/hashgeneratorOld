@@ -7,13 +7,15 @@ import os.path
 import hashFile
 import hashString
 import subFiles.cls
+import subFiles.title
 
 #Defines arguments used later in the code.
 _cls____ = subFiles.cls.cls
+_title__ = subFiles.title.title
 
 #cleans screen before starting
 _cls____()
-
+_title__()
 #Title of program
 print("Hash converter Version 1.0")
 print('For more options, type [H]elp')
