@@ -25,3 +25,4 @@ SHA 224 |  SHA3 224  |  SHAKE 128 (64-bit output)
 SHA 256 |  SHA3 256  |  SHAKE 256 (64-bit output)
 
 All twelve work correctly and refresh every time its function is used.
+ 
