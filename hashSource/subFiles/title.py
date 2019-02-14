@@ -9,3 +9,4 @@ def title():
         _ = os.system('title Hash Generator V. ' + version())
     else:
         x = 5
+

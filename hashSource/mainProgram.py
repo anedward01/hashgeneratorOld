@@ -26,7 +26,7 @@ _title__()
 while True:
 
     #Titles program
-    print("Hash converter Version " + _version())
+    print("Hash Generator Version " + _version())
 
     #asks for file or string
     fileType = input('[S]tring | [F]ile | [H]elp | [E]xit: ')
