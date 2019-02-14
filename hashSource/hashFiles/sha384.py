@@ -15,8 +15,9 @@ def f(n):
         while len(buf) > 0:
             _h.update(buf)
             H = _h.hexdigest()
-            print('SHA 384:        ' + H)
-            return H
+            buf = afile.read(BLOCKSIZE)
+        print('SHA 384:        ' + H)
+        return H
 
 def s(n):
     _h = hashlib.sha384()

@@ -15,8 +15,9 @@ def f(n):
         while len(buf) > 0:
             _h.update(buf)
             H = _h.hexdigest()
-            print('SHAKE 128 (64 bit):        ' + H)
-            return H
+            buf = afile.read(BLOCKSIZE)
+        print('SHAKE 128 (64 bit):        ' + H)
+        return H
 
 def s(n):
     _h = hashlib.shake_256()
