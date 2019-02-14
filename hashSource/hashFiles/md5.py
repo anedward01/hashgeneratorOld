@@ -8,14 +8,16 @@ import os.path
 BLOCKSIZE=65536
 
 def f(n):
+    BLOCKSIZE=65536
     _h = hashlib.md5()
     with open(n, 'rb') as afile:
         buf = afile.read(BLOCKSIZE)
         while len(buf) > 0:
             _h.update(buf)
             H = _h.hexdigest()
-            print('MD5:        ' + H)
-            return H
+            buf = afile.read(BLOCKSIZE)
+        print('MD5:        ' + H)
+        return H
 
 def s(n):
     _h = hashlib.md5()
